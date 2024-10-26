@@ -1,15 +1,23 @@
 import React from 'react';
+/* New way of rendering, but it doesn't work in the freeCodeCamp tests: 
 import ReactDOM from 'react-dom/client';
-import './index.css';
+*/
+import ReactDOM from 'react-dom';
+// import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+/* New way of rendering, but it doesn't work in the freeCodeCamp tests: 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>
 );
+*/
+
+// Old way of rendering, needed to past the freeCodeCamp test: 
+ReactDOM.render(<App />, document.getElementById('root'));
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
